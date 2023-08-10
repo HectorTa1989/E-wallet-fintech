@@ -12,21 +12,21 @@ make build
 
 ### Problem Statement:
 
-Suatu hari anda terfikir untuk membangun sebuah applikasi fintech yang dapat melakukan transaksi non tunai, sebagai Minimum Viable Productnya anda ingin applikasi ini memiliki feature berikut
- 
- Transaksi : 
-  - customer dapat melakukan pendaftaran 
-  - sebagai owner anda dapat mendaftarkan merchant baru yang dapat melakukan transaksi 
-  - customer dapat melakukan pengisian balance (Topup)
-  - customer dapat melakukan pembayaran kepada merchant" yang telah terdaftar 
+One day you think of building a fintech application that can make non-cash transactions, as a Minimum Viable Product you want this application to have the following features
+
+Transaction :
+- customers can register
+- as an owner you can register new merchants who can make transactions
+- customers can fill in the balance (Topup)
+- Customers can make payments to merchants that have been registered
 
 #### Meet the actor :
  - customer: 
  - merchant: 
 
- - transaksi 
-    - customer dapat topup
-    - customer dapat transaksi ke merchant yang telah terdaftar
+ - transaction
+    - Customers can topup
+    - Customers can make transactions at registered merchants
 
 Some Spec: 
 ```
@@ -119,4 +119,4 @@ API:
  
  ### TODO:
  
- masi banyak kekurangan dari implementasi code ini, misalnya implementasi repository yang belum ada (hanya mock), kebutuhan untuk wrap logic kedalam database transaction (for consistency) dan non happy path test
+ there are still many shortcomings in the implementation of this code, for example the implementation of a repository that doesn't exist yet (only a mock), the need to wrap logic into a database transaction (for consistency) and a non-happy path test
